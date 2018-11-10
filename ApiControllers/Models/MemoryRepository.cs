@@ -26,7 +26,7 @@ namespace ApiControllers.Models
             if (reservation.ReservationId == 0)
             {
                 int key = items.Count;
-                while (items.ContainsKey(key) { key++; };
+                while (items.ContainsKey(key)) { key++; };
                 reservation.ReservationId = key;
             }
             items[reservation.ReservationId] = reservation;
